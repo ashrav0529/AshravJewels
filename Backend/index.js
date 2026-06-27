@@ -10,27 +10,29 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Connect to Database (MongoDB or JSON Fallback)
-connectDB().then(() => {
-  // Middleware
-  app.use(cors());
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
+// Connect to Database (Runs asynchronously)
+connectDB();
 
-  // API Routes
-  app.use('/api/auth', require('./routes/auth'));
-  app.use('/api/products', require('./routes/products'));
-  app.use('/api/orders', require('./routes/orders'));
+// Middleware
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-  // Serve Static Frontend Files
-  app.use(express.static(path.join(__dirname, 'public')));
+// API Routes
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/products', require('./routes/products'));
+app.use('/api/orders', require('./routes/orders'));
 
-  // For any other route, redirect to homepage or serve index.html
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-  });
+// Serve Static Frontend Files
+app.use(express.static(path.join(__dirname, 'public')));
 
-  // Start Server
+// For any other route, redirect to homepage or serve index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Start Server (Only when not in Vercel production)
+if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {
     console.log(`===============================================================`);
     console.log(`  ASHRAV JEWELS SERVER IS RUNNING`);
@@ -38,4 +40,7 @@ connectDB().then(() => {
     console.log(`  Date: ${new Date().toLocaleString()}`);
     console.log(`===============================================================`);
   });
-});
+}
+
+// Export the app for Vercel Serverless
+module.exports = app;
