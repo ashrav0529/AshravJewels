@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (Keep Secrets Safe!)
+.env
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Data Storage
+data/
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
