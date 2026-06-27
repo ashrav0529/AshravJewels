@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Ashrav Jewels collection. Find stunning gold rings, emerald earrings, sapphire necklaces, and premium diamond bracelets.">
+  <title>Shop Collection | Ashrav Jewels</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Glassmorphic Navigation Header -->
+  <div id="header-placeholder"></div>
+
+  <main>
+    <!-- Catalog Page Layout -->
+    <div class="catalog-layout">
+      <!-- Sidebar Filters -->
+      <aside class="catalog-sidebar">
+        <!-- Search Widget -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-title">Search</h3>
+          <div class="search-input-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search-input" class="form-control search-control" placeholder="Search gems, metal...">
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-title">Categories</h3>
+          <ul class="category-filter-list">
+            <li>
+              <button class="filter-btn active" data-category="all">
+                All Collections <span><i class="fas fa-chevron-right" style="font-size: 0.6rem;"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-category="rings">
+                Rings <span><i class="fas fa-chevron-right" style="font-size: 0.6rem;"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-category="necklaces">
+                Necklaces <span><i class="fas fa-chevron-right" style="font-size: 0.6rem;"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-category="earrings">
+                Earrings <span><i class="fas fa-chevron-right" style="font-size: 0.6rem;"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-category="bracelets">
+                Bracelets <span><i class="fas fa-chevron-right" style="font-size: 0.6rem;"></i></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Info Widget -->
+        <div class="sidebar-widget" style="margin-bottom: 0;">
+          <h3 class="sidebar-title">Our Atelier</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+            Every gemstone in our catalog is ethically sourced and inspected by certified gemologists before setting.
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main Catalog Grid Area -->
+      <section class="catalog-main">
+        <!-- Catalog Toolbar -->
+        <div class="catalog-toolbar">
+          <div id="catalog-count">Showing 0 exquisite pieces</div>
+          <div class="catalog-sort">
+            <label for="sort-select" style="margin-right: 10px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">Sort By:</label>
+            <select id="sort-select" aria-label="Sort products">
+              <option value="price_asc">Price: Low to High</option>
+              <option value="price_desc">Price: High to Low</option>
+              <option value="newest">Newest Arrivals</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Dynamic Grid -->
+        <div class="products-grid" id="catalog-products-grid">
+          <!-- Populated dynamically via JS -->
+          <div style="grid-column: span 3; text-align: center; padding: 4rem 0;">
+            <i class="fas fa-spinner fa-spin" style="font-size: 1.5rem; color: var(--gold-primary);"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Luxury Quick View Modal -->
+  <div class="modal-overlay" id="quick-view-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="product-detail-grid">
+        <div class="product-detail-media">
+          <img src="" alt="" class="product-detail-img" id="modal-img">
+        </div>
+        <div class="product-detail-info">
+          <h2 class="product-detail-title" id="modal-title"></h2>
+          <div class="product-detail-price" id="modal-price"></div>
+          <p class="product-detail-desc" id="modal-desc"></p>
+          
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td>Metal / Setting</td>
+                <td id="modal-spec-metal"></td>
+              </tr>
+              <tr>
+                <td>Main Gemstone</td>
+                <td id="modal-spec-stone"></td>
+              </tr>
+              <tr>
+                <td>Purity Level</td>
+                <td id="modal-spec-purity"></td>
+              </tr>
+              <tr>
+                <td>Bespoke Weight</td>
+                <td id="modal-spec-weight"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="qty-selector-container">
+            <span class="qty-label">Quantity</span>
+            <div class="qty-selector">
+              <button class="qty-btn" id="modal-qty-minus">-</button>
+              <span class="qty-val" id="modal-qty-val">1</span>
+              <button class="qty-btn" id="modal-qty-plus">+</button>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block" id="modal-add-to-cart-btn">
+            <i class="fas fa-shopping-bag" style="margin-right: 8px;"></i> Add to Shopping Bag
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Luxury Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Global scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

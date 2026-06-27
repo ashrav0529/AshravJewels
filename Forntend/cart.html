@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review the luxury jewelry pieces in your Ashrav Jewels shopping bag before final checkout.">
+  <title>Shopping Bag | Ashrav Jewels</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Glassmorphic Navigation Header -->
+  <div id="header-placeholder"></div>
+
+  <main>
+    <div class="section" style="padding-top: 3rem;">
+      <div class="section-header" style="margin-bottom: 2.5rem;">
+        <span class="section-subtitle">Your Selection</span>
+        <h1 class="section-title">Shopping Bag</h1>
+      </div>
+
+      <!-- Main Cart Layout Grid (Shown when cart has items) -->
+      <div class="cart-layout" id="cart-layout" style="display: none;">
+        <!-- Cart Items List -->
+        <div class="cart-table-container">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="cart-table-body">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Summary & Checkout Sidebar -->
+        <div class="cart-summary">
+          <h2 class="summary-title">Order Summary</h2>
+          
+          <div class="summary-row">
+            <span>Bag Subtotal</span>
+            <span id="cart-subtotal">$0</span>
+          </div>
+          
+          <div class="summary-row">
+            <span>Insured Shipping</span>
+            <span id="cart-shipping">$0</span>
+          </div>
+
+          <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.5; border-left: 1px solid var(--gold-primary); padding-left: 10px;">
+            Complimentary fully-insured priority delivery on all orders exceeding $5,000.
+          </div>
+
+          <div class="summary-row total">
+            <span>Estimated Total</span>
+            <span id="cart-total">$0</span>
+          </div>
+
+          <button id="checkout-proceed-btn" class="btn btn-primary btn-block" style="margin-top: 2rem; padding: 1rem 1.8rem;">
+            Proceed to Checkout
+          </button>
+          
+          <div style="text-align: center; margin-top: 1.5rem; font-size: 0.75rem; color: var(--text-muted);">
+            <i class="fas fa-lock" style="margin-right: 5px;"></i> Secure Checkout Guaranteed
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty Cart State (Shown when cart is empty) -->
+      <div class="empty-cart-view" id="empty-cart-view">
+        <div class="empty-cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+        <h2 class="empty-cart-title">Your Bag is Empty</h2>
+        <p class="empty-cart-desc">You have not added any exquisite pieces to your shopping bag yet. Explore our masterfully crafted collections to find your perfect fit.</p>
+        <a href="products.html" class="btn btn-primary">Discover Collections</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Dynamic Luxury Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Global scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
