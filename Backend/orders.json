@@ -1,0 +1,37 @@
+[
+  {
+    "_collectionName": "orders",
+    "userId": "mock_t7t8z6xce_1782477429759",
+    "items": [
+      {
+        "productId": "mock_j8rl5ac81_1782476512534",
+        "name": "Celestial Gold Choker",
+        "price": 6400,
+        "image": "images/cat_necklaces.jpg",
+        "category": "Necklaces",
+        "quantity": 1
+      },
+      {
+        "productId": "mock_ojfj9tsu2_1782476512534",
+        "name": "Aura Rose Gold Bangle",
+        "price": 7200,
+        "image": "images/cat_bracelets.jpg",
+        "category": "Bracelets",
+        "quantity": 1
+      }
+    ],
+    "totalAmount": 13600,
+    "shippingAddress": {
+      "fullName": "",
+      "addressLine1": "",
+      "city": "",
+      "postalCode": "",
+      "country": "",
+      "phone": ""
+    },
+    "paymentMethod": "Credit Card",
+    "status": "Processing",
+    "_id": "mock_bsrefmbpj_1782478981454",
+    "createdAt": "2026-06-26T13:03:01.454Z"
+  }
+]

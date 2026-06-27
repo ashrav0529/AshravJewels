@@ -1,0 +1,45 @@
+[
+  {
+    "_collectionName": "users",
+    "username": "ashritha",
+    "email": "ashrithapoornima13@gmail.com",
+    "password": "$2a$10$qnu2iPbiwTApT5rPp59KmOfPVbYVl8kw1RpnaCWN8V29UPYVmZLoy",
+    "_id": "mock_t7t8z6xce_1782477429759",
+    "createdAt": "2026-06-26T12:37:09.765Z"
+  },
+  {
+    "username": "gouravpandey",
+    "email": "gouravpandey259@gmail.com",
+    "password": "$2a$10$tfmEtEL76wjdhTrEHWJIq.w99gYTxTEm9pzlyM3VfliWwzvz2WT9a",
+    "_id": "mock_n89ngghbq_1782483438700",
+    "createdAt": "2026-06-26T14:17:18.700Z"
+  },
+  {
+    "username": "tearexx",
+    "email": "jhhjiklkkgdtu@gmail.com",
+    "password": "$2a$10$2t6iFnL0Ubo2eTGObupiaei5ijzkdC98FbeUOwnWYHBf2i1Id5HQa",
+    "_id": "mock_60c18gr3k_1782537413484",
+    "createdAt": "2026-06-27T05:16:53.488Z"
+  },
+  {
+    "username": "hjikjoljk",
+    "email": "jwhdhjydbhw@gmail.com",
+    "password": "$2a$10$lR5X96KGxdekFFRMqnmFg.lJfehatY9OIDBu4Ov/JNEQBK2o1na.a",
+    "_id": "mock_yy015d3va_1782538583934",
+    "createdAt": "2026-06-27T05:36:23.936Z"
+  },
+  {
+    "username": "tomato",
+    "email": "tomato@gmail.com",
+    "password": "$2a$10$Nok9jmi3DJI.ni3CAESWSeqtbCpbq8wCYbHEmtlbdp.FdfTj7mxOW",
+    "_id": "mock_fzhj4ssos_1782540130887",
+    "createdAt": "2026-06-27T06:02:10.887Z"
+  },
+  {
+    "username": "juuujhg",
+    "email": "hghgfgcg@gmail.com",
+    "password": "$2a$10$JIVzPZmuAnrfI3BNwcoehek2Z4IqE.q8FkeGn1ptjCaoItNL2mrL.",
+    "_id": "mock_nk94r3hp9_1782542755867",
+    "createdAt": "2026-06-27T06:45:55.868Z"
+  }
+]
